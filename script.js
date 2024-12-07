@@ -15,13 +15,13 @@ const personalMovieDB = {
     private: false
 };
 
-let film1 = prompt("Один из последних просмотренных фильмов?"), 
-    mark1 = +prompt("На сколько оцените его?"),
-    film2 = prompt("Один из последних просмотренных фильмов?"), 
-    mark2 = +prompt("На сколько оцените его?");
+let a = prompt("Один из последних просмотренных фильмов?"), 
+    b = +prompt("На сколько оцените его?"),
+    c = prompt("Один из последних просмотренных фильмов?"), 
+    d = +prompt("На сколько оцените его?");
 
-personalMovieDB.movies.film1 = mark1;
-personalMovieDB.movies.film2 = mark2;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
 
